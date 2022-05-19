@@ -9,7 +9,8 @@ body {
     background: #ffffff;
     width: 600px;
     padding: 20px 20px 10px 20px;
-    border: 2px solid #dddddd;
+    border: 1px solid #dddddd;
+    border-radius: 2pxs;
 }
   
 .todo-list h1 {
@@ -23,7 +24,7 @@ body {
 }
   
 .todo-footer {
-    border-top: 2px solid #dddddd;
+    border-top: 1px solid #dddddd;
     background: #f4fce8;
     margin: 0 -20px -10px -20px;
     padding: 10px 20px;
