@@ -34,7 +34,12 @@ const PaginateList = (props) => {
         <>
             <ul className="list-group list-group-flush">
             { displayedItems.map((item) => (
-                <li className="list-group-item" key={item.id}>{item.text}</li>
+                <li className="list-group-item" key={item.id}>
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id={`todo-item-check-${item.id}`} />
+                        <label className="form-check-label" htmlFor={`todo-item-check-${item.id}`} >{item.text}</label>
+                    </div>
+                </li>
             )) }
             </ul>
             { ( totalPage > 0 ) && 
