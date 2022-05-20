@@ -2,24 +2,7 @@ import React, { useState } from 'react'
 import TodoList from './TodoList'
 
 function App() {
-
-//   const items = [
-//     {
-//      id: 1,
-//      text: 'Membuang sampah',
-//      completed: false
-//    },
-//    {
-//      id: 2,
-//      text: 'Membuat roti',
-//      completed: false
-//    },
-//    {
-//      id: 3,
-//      text: 'Belajar React',
-//      completed: false
-//    }
-//  ]
+  
   const [items, setItems] = useState([])
 
   const title = 'Things to do'

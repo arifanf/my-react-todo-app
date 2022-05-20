@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import TodoItem from './TodoItem'
+import PaginateList from './PaginateList'
 import Footer from './Footer'
 
 const TodoList = (props) => {
@@ -8,11 +8,7 @@ const TodoList = (props) => {
     <div>
         <div className="todo-list">
         <Header title={props.title} addNewItem={props.addNewItem} />
-          <ul className="list-group list-group-flush">
-          {props.items.map((item, index) => (
-            <TodoItem item={item} key={index} />
-          ))}
-          </ul>
+        <PaginateList items={props.items} initialPage={1} itemPerPage={2} />
             <Footer count={props.items.length} />
         </div>
     </div>
